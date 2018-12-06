@@ -8,3 +8,10 @@ class BlogPostSerializer(serializers.ModelSerializer):
     class Meta:
         model = BlogPost
         fields = '__all__'
+
+
+class BlogPostListSerializer(serializers.ModelSerializer):
+    """Exlclude the body for list view"""
+    class Meta:
+        model = BlogPost
+        exclude = ('body',)
