@@ -10,8 +10,14 @@ class BlogPostSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class BlogPostListSerializer(serializers.ModelSerializer):
+class BlogPostListSerializer(serializers.HyperlinkedModelSerializer):
     """Exlclude the body for list view"""
+    id = serializers.ReadOnlyField()
+
     class Meta:
         model = BlogPost
         exclude = ('body',)
+        lookup_field = 'slug'
+        extra_kwargs = {
+            'url': {'lookup_field': 'slug'}
+        }
