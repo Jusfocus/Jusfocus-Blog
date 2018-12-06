@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class BlogPage(models.Model):
+class BlogPost(models.Model):
     """The model to save a blog page. 
     The body is saved as markdown. tags are implemented via taggit. authors is form users. 
     subtitle is the plain text 2 sentence description about the blog.
