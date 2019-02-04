@@ -18,4 +18,3 @@ I would like to write about few of the books that I read recently,
 * Sapiens & Home Deus
 * Writing to my daughter about Economy
 * Scott Adams
-

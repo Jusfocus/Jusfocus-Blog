@@ -127,6 +127,6 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_WHITELIST = (
     'google.com',
     'hostname.example.com',
-    'localhost:3000',
+    '127.0.0.1:3000',
     'jusfocus.com'
 )
